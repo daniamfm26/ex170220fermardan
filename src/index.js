@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './Estilos/Estilo1fermardan.css';
+import './Estilos/Estilo2fermardan.css';
+import './Estilos/Estilo3fermardan.css';
+import './Estilos/Estilo4fermardan.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import Aplicacionfermardan from './Aplicacionfermardan';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<Aplicacionfermardan />, document.getElementById('root'))

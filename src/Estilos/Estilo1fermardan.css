@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.contenedorfermardan {
+  display: flex;
+  min-height: 80px;
+  background-color: lightgreen;
+}
+.contenedorfermardan__menufermardan {
+  grid-template-columns: auto auto auto auto;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+.contenedorfermardan__menufermardan div {
+  width: 25%;
+  border: black 1px solid;
+}
+.contenedorfermardan__menufermardan div p {
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .contenedorfermardan {
+    display: grid;
+    min-height: 80px;
+  }
+  .contenedorfermardan__menufermardan {
+    grid-template-columns: 100%;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
+  .contenedorfermardan__menufermardan div {
+    grid-column: 1/4;
+    width: 100%;
+    border: black 1px solid;
+  }
+  .contenedorfermardan__menufermardan div p {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=Estilo1fermardan.css.map */

@@ -1,0 +1,73 @@
+
+
+@mixin disfermardan() {
+    background-color: lightgray;
+    border: 2px solid black;
+}
+
+.generalfermardan{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    min-height: 400px;
+    margin-top: 30px;
+    text-align: center;
+    vertical-align: middle;
+    &__cabecerafermardan{
+        grid-column: 1 / 4;
+        @include disfermardan;
+    }
+    &__cuerpofermardan{
+        grid-column: 2 / 3;
+        @include disfermardan;
+    }
+    &__asidefermardan{
+        grid-column: 1 / 2;
+        @include disfermardan;
+    }
+    &__aside2fermardan{
+        grid-column: 3 / 4;
+        @include disfermardan;
+    }
+    &__footerfermardan{
+        grid-column: 1 / 4;
+        @include disfermardan;
+    }
+
+}
+
+@media(max-width:700px){
+
+    @mixin disfermardan() {
+        background-color: lightgray;
+        border: 1px solid black;
+    }
+    
+    .generalfermardan{
+        display: grid;
+        grid-template-columns: 100%;
+        min-height: 400px;
+        margin-top: 30px;
+      
+        &__cabecerafermardan{
+            grid-column: 1 / 2;
+            @include disfermardan;
+        }
+        &__cuerpofermardan{
+            grid-column: 1 / 2;
+            @include disfermardan;
+        }
+        &__asidefermardan{
+            grid-column: 1 / 2;
+            @include disfermardan;
+        }
+        &__aside2fermardan{
+            grid-column: 1 / 2;
+            @include disfermardan;
+        }
+        &__footerfermardan{
+            grid-column: 1 / 2;
+            @include disfermardan;
+        }
+    
+    }
+}
